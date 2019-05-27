@@ -1,0 +1,55 @@
+.font-navbar {
+  font-family: "Bangers", cursive;
+}
+.font-detailsOne {
+  font-family: "Taviraj", serif;
+}
+.font-detailsTwo {
+  font-family: "Shadows Into Light", cursive;
+}
+.font-detailsThree {
+  font-family: "Sorts Mill Goudy", serif;
+}
+.font-heading {
+  font-family: "Permanent Marker", cursive;
+}
+.font-headingTwo {
+  font-family: "Fredoka One", cursive;
+}
+.font-navbar:hover {
+  font-family: "Luckiest Guy", cursive;
+}
+.font-headingThree {
+  font-family: "Carter One", cursive;
+}
+.font-headingFour {
+  font-family: "Prata", serif;
+}
+
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+.shop-item {
+  margin-top: 10px;
+}
+
+.head-texts {
+  margin-top: -320px;
+  margin-left: 440px;
+  color: black !important;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-item {
+    margin-top: 40px;
+  }
+  .head-texts {
+    margin-top: -10px;
+    margin-left: 0px;
+  }
+}
