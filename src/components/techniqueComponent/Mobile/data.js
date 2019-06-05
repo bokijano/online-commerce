@@ -66,7 +66,75 @@ const storeProducts = [
     ],
     inCart: false,
     count: 0
-  }
+  },
+  {
+    id: 5,
+    title: "Galaxy S10 128 GB",
+    imgOne: "images/samsung.jpg",
+    imgTwo: "images/samsung1.jpg",
+    imgThree: "images/samsung2.jpg",
+    price: 140,
+    company: "SAMSUNG",
+    info: [
+      "5.8 / 2280x1080 screen",
+      "12+16 MP / 10 MP cameras",
+      "Octa-core / 6 GB platform",
+      "up to 128 GB memory"
+    ],
+    inCart: false,
+    count: 0
+  },
+  {
+    id: 6,
+    title: "XPERIA10",
+    imgOne: "images/sony.jpg",
+    imgTwo: "images/sony1.jpg",
+    imgThree: "images/sony2.jpg",
+    price: 90,
+    company: "SONY",
+    info: [
+      "6 / 3120x1440 display",
+      "13+5 MP / 8 MP cameras",
+      "Octa-core / 3 GB platform",
+      "up to 64 GB storage"
+    ],
+    inCart: false,
+    count: 0
+  },
+  {
+    id: 7,
+    title: "G7 POWER",
+    imgOne: "images/motorola.jpg",
+    imgTwo: "images/motorola1.jpg",
+    imgThree: "images/motorola2.jpg",
+    price: 50,
+    company: "MOTOROLA",
+    info: [
+      "6.2 / 1520x720 display",
+      "13 MP / 8 MP cameras",
+      "Octa-core / 3 GB platform",
+      "up to 32 GB storage"
+    ],
+    inCart: false,
+    count: 0
+  },
+  {
+    id: 8,
+    title: "3",
+    imgOne: "images/alcatel.jpg",
+    imgTwo: "images/alcatel1.jpg",
+    imgThree: "images/alcatel2.jpg",
+    price: 40,
+    company: "ALCATEL",
+    info: [
+      "5.5 / 1440x720 display",
+      "13 MP / 5 MP cameras",
+      "Quad-core / 2 GB platform",
+      "up to 16 GB storage"
+    ],
+    inCart: false,
+    count: 0
+  }       
 ];
 
 export default storeProducts;

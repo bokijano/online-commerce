@@ -34,6 +34,10 @@
   --mainYellow: #ffa400;
 }
 
+.text-blue {
+  color: var(--mainBlue);
+}
+
 .shop-item {
   margin-top: 10px;
 }
@@ -43,6 +47,8 @@
   margin-left: 440px;
   color: black !important;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .shop-item {

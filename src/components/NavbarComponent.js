@@ -32,6 +32,15 @@ export default class NavbarComponent extends Component {
               technique
             </Link>
           </li>
+          <li className="nav-item ml-5">
+            <Link
+              onClick={displayOtherPage}
+              to="/mobile"
+              className="nav-link"
+            >
+              mobile
+            </Link>
+          </li>
         </ul>
         <Link onClick={displayOtherPage} to="/cart" className="ml-auto">
           <ButtonContainer>
