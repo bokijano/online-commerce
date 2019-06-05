@@ -2,6 +2,7 @@
   "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bokijano.github.io/online-commerce",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
@@ -12,6 +13,7 @@
     "styled-components": "^4.2.0"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
