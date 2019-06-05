@@ -9,10 +9,20 @@ import ImgSix from "./images/sony.jpg";
 import ImgSeven from "./images/motorola.jpg";
 import ImgEight from "./images/alcatel.jpg";
 import ProductWrapper from "./../../ProductWrapper";
+import { Link } from "react-router-dom";
 
 export default class Mobile extends Component {
   state = {
-    img: [ImgOne, ImgTwo, ImgThree, ImgFour, ImgFive, ImgSix, ImgSeven, ImgEight ]
+    img: [
+      ImgOne,
+      ImgTwo,
+      ImgThree,
+      ImgFour,
+      ImgFive,
+      ImgSix,
+      ImgSeven,
+      ImgEight
+    ]
   };
   render() {
     const { id, title, company, imgOne, price, inCart } = this.props.product;
@@ -22,12 +32,17 @@ export default class Mobile extends Component {
         <div className="card">
           <ProductConsumer>
             {value => (
-              <div className="img-container p-5">
-                <img
-                  src={this.state.img[id - 1]}
-                  alt="product"
-                  className="card-img-top"
-                />
+              <div
+                className="img-container p-5"
+                onClick={() => value.handleDetail(id)}
+              >
+                <Link to="/mobileDetails">
+                  <img
+                    src={this.state.img[id - 1]}
+                    alt="product"
+                    className="card-img-top"
+                  />
+                </Link>
                 <buttton
                   className="cart-button"
                   disabled={inCart ? true : false}

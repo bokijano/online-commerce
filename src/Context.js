@@ -22,11 +22,26 @@ class ProductProvider extends Component {
       mobileProducts: tempMobile
     });
   };
+
+  getItem = id => {
+    const products = this.state.mobileProducts.find(
+      product => product.id === id
+    );
+    return products;
+  };
+  handleDetail = id => {
+    const product = this.getItem(id);
+    this.setState({
+      mobileDetails: product
+    });
+  };
+
   render() {
     return (
       <ProductContext.Provider
         value={{
-          ...this.state
+          ...this.state,
+          handleDetail: this.handleDetail
         }}
       >
         {this.props.children}

@@ -38,6 +38,12 @@
   color: var(--mainBlue);
 }
 
+.text-title {
+  font-family: "Carter One", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
 .shop-item {
   margin-top: 10px;
 }
@@ -48,7 +54,11 @@
   color: black !important;
 }
 
-
+@media screen and (min-width: 1000px) {
+  .main-img {
+    margin-left: 100px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .shop-item {

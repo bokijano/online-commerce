@@ -8,6 +8,7 @@ import FurnitureList from "./components/furnitureComponents/FurnitureList";
 import Technique from "./components/techniqueComponent/Technique";
 import Cart from "./components/cart/Cart";
 import MobileList from "./components/techniqueComponent/Mobile/MobileList";
+import MobileDetails from "./components/techniqueComponent/Mobile/Details";
 
 class App extends Component {
   state = {
@@ -24,7 +25,6 @@ class App extends Component {
         <NavbarComponent displayOtherPage={this.displayOtherPage} />
         {/*{this.state.displayHomePage ? (*/}
         {/*<Home />*/}
-        <MobileList />
         {/*) : (*/}
         <Switch>
           {/*<Route exath path="/home" component={Home} />*/}
@@ -32,6 +32,7 @@ class App extends Component {
           {/*<Route path="/furniture" component={FurnitureList} />*/}
           {/*<Route path="/cart" component={Cart} />*/}
           <Route path="/mobile" component={MobileList} />
+          <Route path="/mobileDetails" component={MobileDetails} />
         </Switch>
         {/*})}*/}
       </React.Fragment>
