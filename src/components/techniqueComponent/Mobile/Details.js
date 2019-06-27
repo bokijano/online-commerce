@@ -55,7 +55,14 @@ export default class MobileDetails extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const { id, title, company, price, info, inCart } = value.mobileDetails;
+          const {
+            id,
+            title,
+            company,
+            price,
+            info,
+            inCart
+          } = value.mobileDetails;
           return (
             <div className="container py-5">
               {/* title */}
@@ -121,23 +128,22 @@ export default class MobileDetails extends Component {
                     <li>{info[2]}</li>
                     <li>{info[3]}</li>
                   </ul>
-                {/* end of mobile text */}
-                {/* buttons */}
-                <Link to="/mobile">
-                <ButtonContainer>
-                  back to mobile devices
-                </ButtonContainer> 
-                </Link>
-
-                <ButtonContainer 
-                  cart
-                  disabled={inCart ? true : false}>
-                {inCart ? "device is in cart" : "add to cart"}
-                </ButtonContainer>  
-                   
-                {/* end of buttons */}  
+                  {/* end of mobile text */}
+                  {/* buttons */}
+                  <Link to="/mobile">
+                    <ButtonContainer>back to mobile devices</ButtonContainer>
+                  </Link>
+                  <Link to="cart">
+                    <ButtonContainer
+                      cart
+                      disabled={inCart ? true : false}
+                      onClick={() => value.addToCart(id)}
+                    >
+                      {inCart ? "device is in cart" : "add to cart"}
+                    </ButtonContainer>
+                  </Link>
+                  {/* end of buttons */}
                 </div>
-                
               </div>
             </div>
           );

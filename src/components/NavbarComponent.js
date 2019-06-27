@@ -8,7 +8,7 @@ export default class NavbarComponent extends Component {
   render() {
     const { displayOtherPage } = this.props;
     return (
-      <NavbarWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+      <NavbarWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5 fixed-top">
         <Link to="/home">
           <img src={Phone} alt="brand phone" className="navbar-brand" />
         </Link>
@@ -32,12 +32,9 @@ export default class NavbarComponent extends Component {
               technique
             </Link>
           </li>
+
           <li className="nav-item ml-5">
-            <Link
-              onClick={displayOtherPage}
-              to="/mobile"
-              className="nav-link"
-            >
+            <Link onClick={displayOtherPage} to="/mobile" className="nav-link">
               mobile
             </Link>
           </li>
@@ -66,5 +63,14 @@ const NavbarWrapper = styled.nav`
     font-family: "Luckiest Guy", cursive;
     font-size: 1.5rem;
     text-transform: capitalize;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-link {
+      font-size: 1rem;
+      margin-left: -10px;
+    }
+    .nav-link:hover {
+      font-size: 1.2rem;
+    }
   }
 `;

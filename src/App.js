@@ -23,18 +23,19 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavbarComponent displayOtherPage={this.displayOtherPage} />
-        {/*{this.state.displayHomePage ? (*/}
-        {/*<Home />*/}
-        {/*) : (*/}
-        <Switch>
-          {/*<Route exath path="/home" component={Home} />*/}
-          {/*<Route path="/technique" component={Technique} />*/}
-          {/*<Route path="/furniture" component={FurnitureList} />*/}
-          {/*<Route path="/cart" component={Cart} />*/}
-          <Route path="/mobile" component={MobileList} />
-          <Route path="/mobileDetails" component={MobileDetails} />
-        </Switch>
-        {/*})}*/}
+
+        {this.state.displayHomePage ? (
+          <Home />
+        ) : (
+          <Switch>
+            <Route exath path="/home" component={Home} />
+            {/*<Route path="/technique" component={Technique} />*/}
+            {/*<Route path="/furniture" component={FurnitureList} />*/}
+            <Route path="/cart" component={Cart} />
+            <Route path="/mobile" component={MobileList} />
+            <Route path="/mobileDetails" component={MobileDetails} />
+          </Switch>
+        )}
       </React.Fragment>
     );
   }
