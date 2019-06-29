@@ -36,6 +36,8 @@
 
 .text-blue {
   color: var(--mainBlue);
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .text-title {
@@ -44,8 +46,19 @@
   text-transform: uppercase;
 }
 
+.title-text {
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-left: 20px;
+  font-family: "Permanent Marker", cursive;
+}
+
 .shop-item {
   margin-top: 70px;
+}
+
+.shop-cart {
+  margin-top: 80px;
 }
 
 .head-texts {
@@ -71,6 +84,10 @@
   color: var(--mainWhite) !important;
 }
 
+.img-cart {
+  width: 4rem;
+}
+
 @media screen and (min-width: 1000px) {
   .main-img {
     margin-left: 100px;
@@ -79,7 +96,13 @@
 
 @media screen and (max-width: 768px) {
   .shop-item {
-    margin-top: 220px;
+    margin-top: 150px;
+  }
+  .shop-cart {
+    margin-top: 150px;
+  }
+  .img-cart {
+    width: 6rem;
   }
   .head-texts {
     margin-top: -10px;

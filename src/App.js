@@ -30,7 +30,7 @@ class App extends Component {
           <Switch>
             <Route exath path="/home" component={Home} />
             {/*<Route path="/technique" component={Technique} />*/}
-            {/*<Route path="/furniture" component={FurnitureList} />*/}
+            <Route path="/furniture" component={FurnitureList} />
             <Route path="/cart" component={Cart} />
             <Route path="/mobile" component={MobileList} />
             <Route path="/mobileDetails" component={MobileDetails} />

@@ -133,7 +133,7 @@ export default class MobileDetails extends Component {
                   <Link to="/mobile">
                     <ButtonContainer>back to mobile devices</ButtonContainer>
                   </Link>
-                  <Link to="cart">
+                  <Link to="/cart">
                     <ButtonContainer
                       cart
                       disabled={inCart ? true : false}

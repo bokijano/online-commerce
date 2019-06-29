@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import storeProducts from "./components/techniqueComponent/Mobile/data";
 import detailProduct from "./components/techniqueComponent/Mobile/detailsMobile";
+import storeFurniture from "./components/furnitureComponents/furnitureData.js";
 
 const ProductContext = React.createContext();
 
@@ -8,10 +9,13 @@ class ProductProvider extends Component {
   state = {
     mobileProducts: [],
     mobileDetails: detailProduct,
-    cart: []
+    furnitureProducts: [],
+    cart: [],
+    cartTotal: 0
   };
   componentDidMount() {
     this.setMobile();
+    this.setFurniture();
   }
   setMobile = () => {
     let tempMobile = [];
@@ -23,11 +27,22 @@ class ProductProvider extends Component {
       mobileProducts: tempMobile
     });
   };
+  setFurniture = () => {
+    let tempFurniture = [];
+    storeFurniture.forEach(item => {
+      const singleItem = { ...item };
+      tempFurniture = [...tempFurniture, singleItem];
+    });
+    this.setState({
+      furnitureProducts: tempFurniture
+    });
+  };
 
   getItem = id => {
-    const products = this.state.mobileProducts.find(
-      product => product.id === id
+    const allProducts = this.state.mobileProducts.concat(
+      this.state.furnitureProducts
     );
+    const products = allProducts.find(product => product.id === id);
     return products;
   };
   handleDetail = id => {
@@ -38,9 +53,13 @@ class ProductProvider extends Component {
   };
   addToCart = id => {
     let tempProducts = [...this.state.mobileProducts];
-    const index = tempProducts.indexOf(this.getItem(id));
+    let tempFurniture = [...this.state.furnitureProducts];
 
-    const product = tempProducts[index];
+    let tempAll = tempProducts.concat(tempFurniture);
+
+    const index = tempAll.indexOf(this.getItem(id));
+
+    const product = tempAll[index];
     product.inCart = true;
     product.count = 1;
 
@@ -108,8 +127,28 @@ class ProductProvider extends Component {
       () => this.addTotals()
     );
   };
+  clearCart = () => {
+    this.setState(
+      {
+        cart: []
+      },
+      () => this.setMobile(),
+      () => this.setFurniture(),
+      () => this.addTotals()
+    );
+  };
   addTotals = () => {
-    console.log("add totals value");
+    let cartTotal = 0;
+
+    this.state.cart.map(item => {
+      cartTotal += item.total;
+    });
+
+    let total = cartTotal;
+
+    this.setState({
+      cartTotal: total
+    });
   };
 
   render() {
@@ -121,7 +160,8 @@ class ProductProvider extends Component {
           addToCart: this.addToCart,
           increment: this.increment,
           decrement: this.decrement,
-          removeItem: this.removeItem
+          removeItem: this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}

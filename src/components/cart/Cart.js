@@ -8,7 +8,7 @@ import CartTotal from "./CartTotal";
 export default class Cart extends Component {
   render() {
     return (
-      <section style={{ marginTop: "80px" }}>
+      <section className="shop-cart">
         <ProductConsumer>
           {value => {
             const { cart } = value;

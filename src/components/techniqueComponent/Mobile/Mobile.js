@@ -28,7 +28,7 @@ export default class Mobile extends Component {
     const { id, title, company, price, inCart } = this.props.product;
 
     return (
-      <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+      <ProductWrapper className="col-12 mx-auto col-md-6 col-lg-3 my-1">
         <div className="card">
           <ProductConsumer>
             {value => (
@@ -40,7 +40,7 @@ export default class Mobile extends Component {
                   <img
                     src={this.state.img[id - 1]}
                     alt="product"
-                    className="card-img-top"
+                    className="card-img-top img-fluid"
                   />
                 </Link>
                 <Link to="/cart">
@@ -49,13 +49,7 @@ export default class Mobile extends Component {
                     disabled={inCart ? true : false}
                     onClick={() => value.addToCart(id)}
                   >
-                    {inCart ? (
-                      <p className="text-capitalize mb-0" disabled>
-                        in cart
-                      </p>
-                    ) : (
-                      <i className="fas fa-cart-plus" />
-                    )}
+                    {inCart ? "In Cart" : <i className="fas fa-cart-plus" />}
                   </button>
                 </Link>
               </div>
@@ -63,7 +57,7 @@ export default class Mobile extends Component {
           </ProductConsumer>
           {/* card footer */}
           <div className="card-footer d-flex justify-content-between">
-            <p className="align-self-center mb-0">
+            <p className="align-self-center mb-0 text-title">
               {company} {title}
             </p>
             <h5 className="text-blue font-italic mb-0">

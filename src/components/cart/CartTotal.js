@@ -10,10 +10,12 @@ export default function CartTotal({ value }) {
         <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
           <h5 style={{ marginTop: "20px !important" }}>
             <span className="text-title">total: </span>
-            <strong>$ </strong>
+            <strong>$ { cartTotal }</strong>
           </h5>
           <Link to="/home">
-            <ButtonContainer style={{ marginTop: "40px" }} cart>
+            <ButtonContainer
+             onClick={clearCart}
+             style={{ marginTop: "40px" }} cart>
               clear cart
             </ButtonContainer>
           </Link>

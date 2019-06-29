@@ -1,25 +1,49 @@
 import React, { Component } from "react";
-import ImgOne from "./../techniqueComponent/Mobile/images/htc.jpg";
-import ImgTwo from "./../techniqueComponent/Mobile/images/nokia.jpg";
-import ImgThree from "./../techniqueComponent/Mobile/images/iPhone.jpg";
-import ImgFour from "./../techniqueComponent/Mobile/images/huawei.jpg";
-import ImgFive from "./../techniqueComponent/Mobile/images/samsung.jpg";
-import ImgSix from "./../techniqueComponent/Mobile/images/sony.jpg";
-import ImgSeven from "./../techniqueComponent/Mobile/images/motorola.jpg";
-import ImgEight from "./../techniqueComponent/Mobile/images/alcatel.jpg";
+import Img1 from "./../techniqueComponent/Mobile/images/htc.jpg";
+import Img2 from "./../techniqueComponent/Mobile/images/nokia.jpg";
+import Img3 from "./../techniqueComponent/Mobile/images/iPhone.jpg";
+import Img4 from "./../techniqueComponent/Mobile/images/huawei.jpg";
+import Img5 from "./../techniqueComponent/Mobile/images/samsung.jpg";
+import Img6 from "./../techniqueComponent/Mobile/images/sony.jpg";
+import Img7 from "./../techniqueComponent/Mobile/images/motorola.jpg";
+import Img8 from "./../techniqueComponent/Mobile/images/alcatel.jpg";
+import Img9 from "./../furnitureComponents/furniture pictures/furniture1.jpg";
+import Img10 from "./../furnitureComponents/furniture pictures/furniture2.jpg";
+import Img11 from "./../furnitureComponents/furniture pictures/furniture3.jpg";
+import Img12 from "./../furnitureComponents/furniture pictures/furniture4.jpg";
+import Img13 from "./../furnitureComponents/furniture pictures/furniture5.jpg";
+import Img14 from "./../furnitureComponents/furniture pictures/furniture6.jpg";
+import Img15 from "./../furnitureComponents/furniture pictures/furniture7.jpg";
+import Img16 from "./../furnitureComponents/furniture pictures/furniture8.jpg";
+import Img17 from "./../furnitureComponents/furniture pictures/furniture9.jpg";
+import Img18 from "./../furnitureComponents/furniture pictures/furniture10.jpg";
+import Img19 from "./../furnitureComponents/furniture pictures/furniture11.jpg";
+import Img20 from "./../furnitureComponents/furniture pictures/furniture12.jpg";
 import ButtonContainer from "./../Button.js";
 
 export default class CartItem extends Component {
   state = {
     images: [
-      ImgOne,
-      ImgTwo,
-      ImgThree,
-      ImgFour,
-      ImgFive,
-      ImgSix,
-      ImgSeven,
-      ImgEight
+      Img1,
+      Img2,
+      Img3,
+      Img4,
+      Img5,
+      Img6,
+      Img7,
+      Img8,
+      Img9,
+      Img10,
+      Img11,
+      Img12,
+      Img13,
+      Img14,
+      Img15,
+      Img16,
+      Img17,
+      Img18,
+      Img19,
+      Img20
     ]
   };
   render() {
@@ -37,8 +61,7 @@ export default class CartItem extends Component {
       >
         <div className="col-10 mx-auto col-lg-2">
           <img
-            style={{ width: "3rem", height: "5rem" }}
-            className="img-fluid"
+            className="img-fluid img-cart"
             src={this.state.images[id - 1]}
             alt="product"
           />
