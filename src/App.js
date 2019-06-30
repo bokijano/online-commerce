@@ -7,9 +7,10 @@ import Home from "./Home";
 import FurnitureList from "./components/furnitureComponents/FurnitureList";
 import Technique from "./components/techniqueComponent/Technique";
 import Cart from "./components/cart/Cart";
-import ShopingCart from "./components/cart/ShopingCartList";
 import MobileList from "./components/techniqueComponent/Mobile/MobileList";
 import MobileDetails from "./components/techniqueComponent/Mobile/Details";
+import Laptop from "./components/techniqueComponent/Laptop/Laptop.js";
+import TV from "./components/techniqueComponent/TV/TV.js";
 
 class App extends Component {
   state = {
@@ -30,10 +31,11 @@ class App extends Component {
         ) : (
           <Switch>
             <Route exath path="/home" component={Home} />
-            {/*<Route path="/technique" component={Technique} />*/}
+            <Route path="/technique" component={Technique} />
             <Route path="/furniture" component={FurnitureList} />
             <Route path="/cart" component={Cart} />
-            <Route path="/shopingCart" component={ShopingCart} />
+            <Route path="/laptop" component={Laptop} />
+            <Route path="/tv" component={TV} />
             <Route path="/mobile" component={MobileList} />
             <Route path="/mobileDetails" component={MobileDetails} />
           </Switch>

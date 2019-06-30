@@ -164,9 +164,6 @@ class ProductProvider extends Component {
     });
   };
   closeBuyCart = () => {
-    console.log("work", this.state.cart);
-    console.log(storeFurniture);
-    window.location.reload();
 
     this.setState({
       shopingCart: false,

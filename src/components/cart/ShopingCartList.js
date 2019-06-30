@@ -13,7 +13,9 @@ export default function ShopingCartList({ value }) {
             Your total account is: $ {cartTotal}
           </div>
           <div className="col-10 text-center">
-            <ButtonContainer onClick={closeBuyCart}>confirm</ButtonContainer>
+            <Link to="/home">
+              <ButtonContainer onClick={closeBuyCart}>confirm</ButtonContainer>
+            </Link>
           </div>
         </div>
       </div>
