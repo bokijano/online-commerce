@@ -88,6 +88,22 @@
   width: 4rem;
 }
 
+.total-acount {
+  width: 40%;
+  margin-left: 7%;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #333;
+  text-shadow: 1px 1px 3px #333;
+  box-shadow: 5px 5px 10px #333;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Luckiest Guy", cursive;
+}
+
 @media screen and (min-width: 1000px) {
   .main-img {
     margin-left: 100px;

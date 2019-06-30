@@ -133,23 +133,15 @@ class ProductProvider extends Component {
       () => this.addTotals()
     );
   };
-  cartDetails = id => {
-    let shopingCart = this.state.cart.find(item => item.id === id);
-    console.log(shopingCart);
-    console.log(this.state.shopingCartDetails);
-    console.log(this.state.cart);
-    this.setState({
-      shopingCartDetails: shopingCart
-    });
-  };
   clearCart = () => {
     this.setState(
       {
         cart: [],
-        furnitureProducts: storeFurniture
+        furnitureProducts: storeFurniture,
+        shopingCart: false
       },
       this.setMobile(),
-      () => this.setFurniture(),
+      this.setFurniture(),
       () => this.addTotals()
     );
   };
@@ -173,8 +165,14 @@ class ProductProvider extends Component {
   };
   closeBuyCart = () => {
     console.log("work", this.state.cart);
+    console.log(storeFurniture);
+    window.location.reload();
+
     this.setState({
-      shopingCart: false
+      shopingCart: false,
+      cart: [],
+      furnitureProducts: storeFurniture,
+      mobileProduct: storeProducts
     });
   };
 
