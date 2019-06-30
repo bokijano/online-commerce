@@ -4,6 +4,7 @@ import EmptyCart from "./EmptyCart";
 import { ProductConsumer } from "./../../Context.js";
 import CartList from "./CartList";
 import CartTotal from "./CartTotal";
+import ShopingCartList from "./ShopingCartList";
 
 export default class Cart extends Component {
   render() {
@@ -28,6 +29,8 @@ export default class Cart extends Component {
                   <CartColumns />
                   <CartList value={value} />
                   <CartTotal value={value} />
+                  {/*{value.shopingCart ? <ShopingCartList value={value} /> : null}*/}
+                  {value.shopingCart ? <ShopingCartList value={value} /> : null}
                 </React.Fragment>
               );
             } else {

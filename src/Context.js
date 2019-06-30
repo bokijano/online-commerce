@@ -11,7 +11,8 @@ class ProductProvider extends Component {
     mobileDetails: detailProduct,
     furnitureProducts: [],
     cart: [],
-    cartTotal: 0
+    cartTotal: 0,
+    shopingCart: false
   };
   componentDidMount() {
     this.setMobile();
@@ -112,8 +113,12 @@ class ProductProvider extends Component {
     removeItem = this.state.cart.filter(item => item.id !== id);
 
     let tempProducts = [...this.state.mobileProducts];
-    const index = tempProducts.indexOf(this.getItem(id));
-    let removedProduct = tempProducts[index];
+    let tempFurniture = [...this.state.furnitureProducts];
+
+    let tempAll = tempProducts.concat(tempFurniture);
+
+    const index = tempAll.indexOf(this.getItem(id));
+    let removedProduct = tempAll[index];
 
     removedProduct.inCart = false;
     removedProduct.count = 0;
@@ -122,17 +127,28 @@ class ProductProvider extends Component {
     this.setState(
       {
         cart: [...removeItem],
-        mobileProducts: [...tempProducts]
+        mobileProducts: [...tempProducts],
+        furnitureProducts: [...tempFurniture]
       },
       () => this.addTotals()
     );
   };
+  cartDetails = id => {
+    let shopingCart = this.state.cart.find(item => item.id === id);
+    console.log(shopingCart);
+    console.log(this.state.shopingCartDetails);
+    console.log(this.state.cart);
+    this.setState({
+      shopingCartDetails: shopingCart
+    });
+  };
   clearCart = () => {
     this.setState(
       {
-        cart: []
+        cart: [],
+        furnitureProducts: storeFurniture
       },
-      () => this.setMobile(),
+      this.setMobile(),
       () => this.setFurniture(),
       () => this.addTotals()
     );
@@ -141,13 +157,24 @@ class ProductProvider extends Component {
     let cartTotal = 0;
 
     this.state.cart.map(item => {
-      cartTotal += item.total;
+      return (cartTotal += item.total);
     });
 
     let total = cartTotal;
 
     this.setState({
       cartTotal: total
+    });
+  };
+  buyProducts = () => {
+    this.setState({
+      shopingCart: true
+    });
+  };
+  closeBuyCart = () => {
+    console.log("work", this.state.cart);
+    this.setState({
+      shopingCart: false
     });
   };
 
@@ -161,7 +188,10 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
-          clearCart: this.clearCart
+          clearCart: this.clearCart,
+          cartDetails: this.cartDetails,
+          buyProducts: this.buyProducts,
+          closeBuyCart: this.closeBuyCart
         }}
       >
         {this.props.children}
