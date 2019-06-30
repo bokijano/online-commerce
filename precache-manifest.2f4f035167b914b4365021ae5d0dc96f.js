@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4ebc151ada6d051056bc8f43ae6ac42",
+    "revision": "e3dd8ff69b39056f05145a020dccc5c1",
     "url": "/online-commerce/index.html"
   },
   {
-    "revision": "3295c60f0bee430584ae",
+    "revision": "40f355d7947fb05385ad",
     "url": "/online-commerce/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "af6243019cda4c08136b",
-    "url": "/online-commerce/static/css/main.56e3f815.chunk.css"
+    "revision": "25d82a26675392f860d7",
+    "url": "/online-commerce/static/css/main.004c214e.chunk.css"
   },
   {
-    "revision": "3295c60f0bee430584ae",
-    "url": "/online-commerce/static/js/2.ba51df33.chunk.js"
+    "revision": "40f355d7947fb05385ad",
+    "url": "/online-commerce/static/js/2.c07cacad.chunk.js"
   },
   {
-    "revision": "af6243019cda4c08136b",
-    "url": "/online-commerce/static/js/main.4a4a4da4.chunk.js"
+    "revision": "25d82a26675392f860d7",
+    "url": "/online-commerce/static/js/main.f08f0f6a.chunk.js"
   },
   {
     "revision": "e46f0452103889b7f545",
@@ -34,6 +34,54 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2b5903d21b1426c78c1cf1ef7a4e79ef",
     "url": "/online-commerce/static/media/alcatel2.2b5903d2.jpg"
+  },
+  {
+    "revision": "d46c367a993cfe6703553b5e8aefc503",
+    "url": "/online-commerce/static/media/furniture1.d46c367a.jpg"
+  },
+  {
+    "revision": "259653e815ea9aeaa13ddf7a0f78edea",
+    "url": "/online-commerce/static/media/furniture10.259653e8.jpg"
+  },
+  {
+    "revision": "de3adcacfea0472ef8b262bb2a4fe36b",
+    "url": "/online-commerce/static/media/furniture11.de3adcac.jpg"
+  },
+  {
+    "revision": "86d0e8b236da6b502e1cc082c44a3022",
+    "url": "/online-commerce/static/media/furniture12.86d0e8b2.jpg"
+  },
+  {
+    "revision": "2311d27986983d4015b32cbd1e40f657",
+    "url": "/online-commerce/static/media/furniture2.2311d279.jpg"
+  },
+  {
+    "revision": "e73d777ab0baa01dc8b6053f98ae5b2e",
+    "url": "/online-commerce/static/media/furniture3.e73d777a.jpg"
+  },
+  {
+    "revision": "f4858197b28dd2225ac0876bb37cb201",
+    "url": "/online-commerce/static/media/furniture4.f4858197.jpg"
+  },
+  {
+    "revision": "a16f259de468b08f921d71157a8dd032",
+    "url": "/online-commerce/static/media/furniture5.a16f259d.jpg"
+  },
+  {
+    "revision": "35e900b1b5bdcb827158aa0e3b933ad9",
+    "url": "/online-commerce/static/media/furniture6.35e900b1.jpg"
+  },
+  {
+    "revision": "cf30b02afffca949bbb0b4bb0bf49d22",
+    "url": "/online-commerce/static/media/furniture7.cf30b02a.jpg"
+  },
+  {
+    "revision": "b8dafa985c3a23678083cfe5b62530dd",
+    "url": "/online-commerce/static/media/furniture8.b8dafa98.jpg"
+  },
+  {
+    "revision": "52c47490a9ef1ed33e7a567e6bf1709d",
+    "url": "/online-commerce/static/media/furniture9.52c47490.jpg"
   },
   {
     "revision": "94fb90cd02732c6a47e01b850611a16a",
