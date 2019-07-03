@@ -66,13 +66,10 @@ class ProductProvider extends Component {
   };
 
   getItem = id => {
-    const allProducts = this.state.mobileProducts.concat(
-      this.state.furnitureProducts
-    ).concat(
-      this.state.laptopProducts
-    ).concat(
-      this.state.tvProducts
-    );
+    const allProducts = this.state.mobileProducts
+      .concat(this.state.furnitureProducts)
+      .concat(this.state.laptopProducts)
+      .concat(this.state.tvProducts);
     const products = allProducts.find(product => product.id === id);
     return products;
   };
@@ -82,17 +79,16 @@ class ProductProvider extends Component {
       mobileDetails: product
     });
   };
-  handleDetailLaptop = id => {
-    const product = this.getItem(id);
-    this.setState({
-      mobileDetails: product
-    });
-  };
   addToCart = id => {
     let tempProducts = [...this.state.mobileProducts];
     let tempFurniture = [...this.state.furnitureProducts];
+    let tempLaptop = [...this.state.laptopProducts];
+    let tempTV = [...this.state.tvProducts];
 
-    let tempAll = tempProducts.concat(tempFurniture);
+    let tempAll = tempProducts
+      .concat(tempFurniture)
+      .concat(tempLaptop)
+      .concat(tempTV);
 
     const index = tempAll.indexOf(this.getItem(id));
 
@@ -150,8 +146,13 @@ class ProductProvider extends Component {
 
     let tempProducts = [...this.state.mobileProducts];
     let tempFurniture = [...this.state.furnitureProducts];
+    let tempLaptop = [...this.state.laptopProducts];
+    let tempTV = [...this.state.tvProducts];
 
-    let tempAll = tempProducts.concat(tempFurniture);
+    let tempAll = tempProducts
+      .concat(tempFurniture)
+      .concat(tempLaptop)
+      .concat(tempTV);
 
     const index = tempAll.indexOf(this.getItem(id));
     let removedProduct = tempAll[index];
@@ -164,7 +165,9 @@ class ProductProvider extends Component {
       {
         cart: [...removeItem],
         mobileProducts: [...tempProducts],
-        furnitureProducts: [...tempFurniture]
+        furnitureProducts: [...tempFurniture],
+        laptopProducts: [...tempLaptop],
+        tvProducts: [...tempTV]
       },
       () => this.addTotals()
     );

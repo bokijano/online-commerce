@@ -124,4 +124,7 @@
     margin-top: -10px;
     margin-left: 0px;
   }
+  #tech {
+    padding: 5px !important;
+  }
 }
