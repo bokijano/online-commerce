@@ -10,7 +10,7 @@ export default function ShopingCartList({ value }) {
       <div className="container">
         <div className="row">
           <div className="col-10 total-acount">
-            Your total account is: $ {cartTotal}
+            Total account is: ${cartTotal}
           </div>
           <div className="col-10 text-center">
             <Link to="/home">

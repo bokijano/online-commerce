@@ -173,14 +173,15 @@ class ProductProvider extends Component {
     );
   };
   clearCart = () => {
+    this.setMobile();
+    this.setFurniture();
+    this.setLaptop();
+    this.setTV();
     this.setState(
       {
         cart: [],
-        furnitureProducts: storeFurniture,
         shopingCart: false
       },
-      this.setMobile(),
-      this.setFurniture(),
       () => this.addTotals()
     );
   };
@@ -203,11 +204,13 @@ class ProductProvider extends Component {
     });
   };
   closeBuyCart = () => {
+    this.setMobile();
+    this.setFurniture();
+    this.setLaptop();
+    this.setTV();
     this.setState({
       shopingCart: false,
-      cart: [],
-      furnitureProducts: storeFurniture,
-      mobileProduct: storeProducts
+      cart: []
     });
   };
 
