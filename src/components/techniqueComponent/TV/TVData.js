@@ -13,6 +13,7 @@ const storeTV = [
       "Digital Tunel: DVB-T/C/T2"
     ],
     inCart: false,
+    count: 0,
     total: 0
   },
   {
@@ -29,6 +30,7 @@ const storeTV = [
       "Digital Tunel: DVB-T/C"
     ],
     inCart: false,
+    count: 0,
     total: 0
   },
   {
@@ -45,6 +47,7 @@ const storeTV = [
       "Digital Tunel: DVB-T2/C/S2"
     ],
     inCart: false,
+    count: 0,
     total: 0
   },
   {
@@ -61,6 +64,7 @@ const storeTV = [
       "Digital Tunel: DVB-T2/C/S2"
     ],
     inCart: false,
+    count: 0,
     total: 0
   }
 ];

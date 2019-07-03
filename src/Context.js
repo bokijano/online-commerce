@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import storeProducts from "./components/techniqueComponent/Mobile/data";
 import detailProduct from "./components/techniqueComponent/Mobile/detailsMobile";
-import storeFurniture from "./components/furnitureComponents/furnitureData.js";
+import storeLaptop from "./components/techniqueComponent/Laptop/LaptopData";
+import storeTV from "./components/techniqueComponent/TV/TVData";
+import storeFurniture from "./components/furnitureComponents/furnitureData";
 
 const ProductContext = React.createContext();
 
@@ -10,6 +12,8 @@ class ProductProvider extends Component {
     mobileProducts: [],
     mobileDetails: detailProduct,
     furnitureProducts: [],
+    laptopProducts: [],
+    tvProducts: [],
     cart: [],
     cartTotal: 0,
     shopingCart: false
@@ -17,6 +21,8 @@ class ProductProvider extends Component {
   componentDidMount() {
     this.setMobile();
     this.setFurniture();
+    this.setLaptop();
+    this.setTV();
   }
   setMobile = () => {
     let tempMobile = [];
@@ -38,15 +44,45 @@ class ProductProvider extends Component {
       furnitureProducts: tempFurniture
     });
   };
+  setLaptop = () => {
+    let tempLaptop = [];
+    storeLaptop.forEach(item => {
+      const singleItem = { ...item };
+      tempLaptop = [...tempLaptop, singleItem];
+    });
+    this.setState({
+      laptopProducts: tempLaptop
+    });
+  };
+  setTV = () => {
+    let tempTV = [];
+    storeTV.forEach(item => {
+      const singleItem = { ...item };
+      tempTV = [...tempTV, singleItem];
+    });
+    this.setState({
+      tvProducts: tempTV
+    });
+  };
 
   getItem = id => {
     const allProducts = this.state.mobileProducts.concat(
       this.state.furnitureProducts
+    ).concat(
+      this.state.laptopProducts
+    ).concat(
+      this.state.tvProducts
     );
     const products = allProducts.find(product => product.id === id);
     return products;
   };
   handleDetail = id => {
+    const product = this.getItem(id);
+    this.setState({
+      mobileDetails: product
+    });
+  };
+  handleDetailLaptop = id => {
     const product = this.getItem(id);
     this.setState({
       mobileDetails: product
@@ -164,7 +200,6 @@ class ProductProvider extends Component {
     });
   };
   closeBuyCart = () => {
-
     this.setState({
       shopingCart: false,
       cart: [],

@@ -13,6 +13,7 @@ const storeLaptops = [
       "HDDRAM memory: 4GB"
     ],
     inCart: false,
+    count: 0,
     total: 0
   },
   {
@@ -29,6 +30,7 @@ const storeLaptops = [
       "HDDRAM memory: 4GB"
     ],
     inCart: false,
+    count: 0,
     total: 0
   },
   {
@@ -45,6 +47,7 @@ const storeLaptops = [
       "HDDRAM memory: 4GB"
     ],
     inCart: false,
+    count: 0,
     total: 0
   },
   {
@@ -53,7 +56,7 @@ const storeLaptops = [
     img: "laptop images/laptop4.jpg",
     imgOne: "laptop images/laptop41.jpg",
     imgTwo: "laptop images/laptop42.jpg",
-    price: 213,
+    price: 999,
     info: [
       "Processor Model: Intel® Core™ i5 8250U do 3.4GHz",
       "Screen diagonal: 13.3'",
@@ -61,6 +64,7 @@ const storeLaptops = [
       "HDDRAM memory: 8GB"
     ],
     inCart: false,
+    count: 0,
     total: 0
   }
 ];

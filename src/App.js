@@ -9,8 +9,9 @@ import Technique from "./components/techniqueComponent/Technique";
 import Cart from "./components/cart/Cart";
 import MobileList from "./components/techniqueComponent/Mobile/MobileList";
 import MobileDetails from "./components/techniqueComponent/Mobile/Details";
-import Laptop from "./components/techniqueComponent/Laptop/Laptop.js";
-import TV from "./components/techniqueComponent/TV/TV.js";
+import Laptop from "./components/techniqueComponent/Laptop/LaptopList.js";
+import TV from "./components/techniqueComponent/TV/TVList";
+import TechniqueDetails from "./components/techniqueComponent/techniqueDetails";
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
             <Route path="/furniture" component={FurnitureList} />
             <Route path="/cart" component={Cart} />
             <Route path="/laptop" component={Laptop} />
+            <Route path="/techniqueDetails" component={TechniqueDetails} />
             <Route path="/tv" component={TV} />
             <Route path="/mobile" component={MobileList} />
             <Route path="/mobileDetails" component={MobileDetails} />
