@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2d22670c11786025e4af3cc70666088",
+    "revision": "a918298929d75ec0864ac5f067746e45",
     "url": "/online-commerce/index.html"
   },
   {
-    "revision": "40f355d7947fb05385ad",
+    "revision": "6bfad1480df226a2dd12",
     "url": "/online-commerce/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "75c32751b46fa1a20eee",
+    "revision": "d375864577abd0a8b86a",
     "url": "/online-commerce/static/css/main.e64cc39c.chunk.css"
   },
   {
-    "revision": "40f355d7947fb05385ad",
-    "url": "/online-commerce/static/js/2.c07cacad.chunk.js"
+    "revision": "6bfad1480df226a2dd12",
+    "url": "/online-commerce/static/js/2.fda4c75e.chunk.js"
   },
   {
-    "revision": "75c32751b46fa1a20eee",
-    "url": "/online-commerce/static/js/main.1fddeaf7.chunk.js"
+    "revision": "d375864577abd0a8b86a",
+    "url": "/online-commerce/static/js/main.9c87ad0e.chunk.js"
   },
   {
     "revision": "e46f0452103889b7f545",
@@ -120,6 +120,58 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/online-commerce/static/media/iPhone2.6d28a24c.jpg"
   },
   {
+    "revision": "33c54c9ef3d55cdf74f08d07fa7f1520",
+    "url": "/online-commerce/static/media/laptop.33c54c9e.jpg"
+  },
+  {
+    "revision": "d231a4d94a44040c14b04acdb202dab5",
+    "url": "/online-commerce/static/media/laptop1.d231a4d9.jpg"
+  },
+  {
+    "revision": "d118f787386a7622f3cc41e98765fafa",
+    "url": "/online-commerce/static/media/laptop11.d118f787.jpg"
+  },
+  {
+    "revision": "7a8b7b7a2d1b93e278b306445a4b07c0",
+    "url": "/online-commerce/static/media/laptop12.7a8b7b7a.jpg"
+  },
+  {
+    "revision": "4de472bb5ce2b7997be393417e215b82",
+    "url": "/online-commerce/static/media/laptop2.4de472bb.jpg"
+  },
+  {
+    "revision": "1bdd830eeaff02eec0daa07bcd17cf01",
+    "url": "/online-commerce/static/media/laptop21.1bdd830e.jpg"
+  },
+  {
+    "revision": "6c65244f7439485c5331ee2f478db740",
+    "url": "/online-commerce/static/media/laptop22.6c65244f.jpg"
+  },
+  {
+    "revision": "755d2ea0894a09509f89eadf3c80eaf7",
+    "url": "/online-commerce/static/media/laptop3.755d2ea0.jpg"
+  },
+  {
+    "revision": "9a954faa4d950c7fea6c9954b94be26e",
+    "url": "/online-commerce/static/media/laptop31.9a954faa.jpg"
+  },
+  {
+    "revision": "796465c4319f31ca83b8fe84ff5322d2",
+    "url": "/online-commerce/static/media/laptop32.796465c4.jpg"
+  },
+  {
+    "revision": "243fe92380aa60424b5bd3ff4dcba48e",
+    "url": "/online-commerce/static/media/laptop4.243fe923.jpg"
+  },
+  {
+    "revision": "4c3b6e7a0df0375e1288301f7cf39476",
+    "url": "/online-commerce/static/media/laptop41.4c3b6e7a.jpg"
+  },
+  {
+    "revision": "a533f112566217bbb8c1422377dd48c2",
+    "url": "/online-commerce/static/media/laptop42.a533f112.jpg"
+  },
+  {
     "revision": "e2230ca7a61fa61e8f48a01862067d51",
     "url": "/online-commerce/static/media/motorola.e2230ca7.jpg"
   },
@@ -174,5 +226,49 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0ff39d0c64d6ec607f29f1132e1bf5b0",
     "url": "/online-commerce/static/media/sony2.0ff39d0c.jpg"
+  },
+  {
+    "revision": "715ffd01a96f8b4d99209d68f45caa3b",
+    "url": "/online-commerce/static/media/tv.715ffd01.jpg"
+  },
+  {
+    "revision": "b7daef633d8efcfcac51cac92f267318",
+    "url": "/online-commerce/static/media/tv1.b7daef63.jpg"
+  },
+  {
+    "revision": "460dcad76e0046581fb52a277491d43f",
+    "url": "/online-commerce/static/media/tv12.460dcad7.jpg"
+  },
+  {
+    "revision": "5532a58204596730a29921f3455fd6f0",
+    "url": "/online-commerce/static/media/tv2.5532a582.jpg"
+  },
+  {
+    "revision": "87400b1aace890ea8adaf10030adbfec",
+    "url": "/online-commerce/static/media/tv21.87400b1a.jpg"
+  },
+  {
+    "revision": "48977b11ae9b7c84c3d975ffb792b147",
+    "url": "/online-commerce/static/media/tv22.48977b11.jpg"
+  },
+  {
+    "revision": "7a49c1074b2e715d7719af71cf7f7e94",
+    "url": "/online-commerce/static/media/tv3.7a49c107.jpg"
+  },
+  {
+    "revision": "b033e467effbd204bfed6e8811bd2cf4",
+    "url": "/online-commerce/static/media/tv31.b033e467.jpg"
+  },
+  {
+    "revision": "ab3d6d093ed1167730d9c3bbf622fbbb",
+    "url": "/online-commerce/static/media/tv32.ab3d6d09.jpg"
+  },
+  {
+    "revision": "9d2e8953a5af4b0033f8b68fa3b2cdeb",
+    "url": "/online-commerce/static/media/tv4.9d2e8953.jpg"
+  },
+  {
+    "revision": "1ff25206e42dddc53fd74e11133f53f1",
+    "url": "/online-commerce/static/media/tv41.1ff25206.jpg"
   }
 ]);
